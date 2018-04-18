@@ -24,4 +24,4 @@ class Plan:
         for service in self.covered_services:
             if code == service.get_code():
                 return 1 - (service.get_percent_covered()/100)
-        return 0
+        return 1
